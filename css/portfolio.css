@@ -1,0 +1,59 @@
+.container{
+    grid-template-areas: "header"
+    "portfolio"
+    "footer";
+    gap: 4rem;
+}
+
+#portfolio{
+    grid-area: portfolio;
+    padding-inline: 5%;
+}
+
+#portfolio>h2{
+    font-size: 4rem;
+}
+
+#portfolio>section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+#portfolio>section>figure{
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
+}
+
+#portfolio img{
+    width: 70%;
+}
+
+h2,h3{text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2rem;
+}
+p{
+    font-size: 1.5rem;
+}
+
+figcaption{
+    font-size: 1.5rem;
+}
+
+
+
+
+

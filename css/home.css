@@ -1,0 +1,358 @@
+/*This CSS file defines the style rules for the home page, and it is default
+style for all pages in this project, each page has its own css file that overwrites
+some rules to fit with its content.*/
+body{
+
+    /*Ensures that the background image is set correctly and that 
+    the background is fixed and does no move with scroll.*/
+
+    background-image: url('background_images/background1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+    
+}
+
+html{
+    /*Makes the scrolling from one element in the same page another 
+    smooth*/
+    scroll-behavior: smooth;
+}
+.container{
+
+    /*This makes sure all the overall page layout is created
+    with a CSS Grid*/
+
+    min-height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+
+    gap: 4rem;
+
+}
+
+
+header{
+
+   
+    display: grid;
+    grid-template-areas: "title nav";
+    background:none;
+    padding-inline: 3rem;
+    padding-block: 3rem;
+    animation-name: transition;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+
+    align-items: center;
+
+    
+    
+}
+
+nav{
+    grid-area: nav;
+    display: block;
+}
+
+#title a{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    
+
+}
+#title{
+
+    grid-area: title;
+    justify-self: end;
+
+}
+
+
+#hamburgermenu{
+    grid-area: hamburgermenu;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+
+
+
+
+
+
+
+header,footer{
+
+    /*This sets the background color of header and footer, this
+    means they are both consistent*/
+
+    background-color: #2A628F;
+}
+
+
+@keyframes transition {
+    /*This sets up the keyframes required for the transition animation
+     between pages*/
+
+    0%   {opacity: 0%;}
+    25%  {opacity: 25%;}
+    50%  {opacity: 50%;}
+    75%  {opacity: 75%;}
+    100% {opacity: 100%;}
+    
+}
+
+article,form{
+    /*Applies the transition key frames as a 1s linear animation
+    for both articles and forms*/
+    animation-name: transition;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+article{
+
+    /*Adds color to article*/
+    background-color:  #2A628F;
+    border-radius: 2rem;
+    border-radius: 2rem;
+    border-width: 0.2rem;
+    border-style: solid;
+    border-color: white;
+    
+}
+
+
+
+
+
+nav>ul{
+
+    /*Makes sure that ul inside nav is a flex with no list bullet points*/
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif; /*Google Font Used*/
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+h2,p,h3,ul{
+    color: whitesmoke;
+}
+
+
+
+
+nav a:hover{
+    color: gray;
+}
+
+#home>#bio{
+    grid-area: bio;
+}
+
+#home>figure>img{
+width: 20rem;
+border-radius: 5%;
+}
+
+
+
+#home{
+    /*Defines the home article as a grid to allow the bio,pageheader and figure
+    to be arranged properly within it. */
+    display: grid;
+    grid-template-areas: "pageheader pageheader" 
+    "bio figure";
+    gap: 2%;
+    row-gap: 10%;
+    column-gap: 15%;
+    padding-inline: 2%;
+    padding-block-end: 4%;
+    grid-area: home;
+   
+}
+
+#home>#bio p{
+    font-size: 2rem;
+    font-family: Robo;
+}
+
+
+
+h2{
+    font-family: 'Rubik', sans-serif; /*Google font used*/
+}
+
+p{
+    font-family: 'Roboto', sans-serif; /*Google font used*/
+}
+
+h3{
+    font-family: 'Tilt Warp', cursive; /*Google font used*/
+    font-size: 1.25rem;
+
+}
+
+article{
+
+    outline-width: 20%;
+    margin-inline: 10%;
+   
+}
+
+.pageheader{
+    /*Sets the font color,size and family for all pageheaders*/
+    font-size: 3rem;
+
+    color: white;
+
+    font-family: 'Rubik', sans-serif; /*Google font used*/
+    grid-area: pageheader;
+
+
+}
+
+footer>p{
+    
+    font-family: 'Rubik', sans-serif; /*Google font used*/
+    font-size: 1rem;
+}
+
+footer a:visited, footer a:link{
+
+    /*inherits color of footer a */
+    color: inherit;
+    
+}
+
+
+footer li ,footer a{
+    /*Removes underline*/
+    text-decoration: none;
+    
+}
+
+
+
+footer ul{
+    /*Makes the footer undordered */
+    padding-inline: 2rem;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+}
+
+
+footer a:hover{
+    /*Changes the color of a tags when hovered over
+    to indicate they are clickable*/
+
+    color: grey;
+}
+
+footer{
+    margin-top: auto;
+    padding-block: 0.5%;
+}
+
+@media only screen and (max-width: 768px){
+    header{
+        display: grid;
+        grid-template-areas: 
+        "hamburgermenu title"
+        "nav .";
+    
+        font-size: 2em;
+    }
+    
+    #home{
+        margin-inline: 1rem ;
+        grid-template-areas: "pageheader" 
+        "figure"
+        "bio";
+        
+    }
+    
+    #bio{
+        margin-bottom: 20%;
+    }
+    
+    #home>figure>img{
+    
+        width: 40rem;
+    }
+    
+    #home>figure{
+    
+        text-align: center;
+    
+    }
+    
+    
+    
+    #hamburgermenu{
+        display: block;
+        justify-items: end;
+    }
+    
+    #title{
+    
+        justify-self: start;
+    }
+    
+    nav{
+        justify-self: center;
+        display: none;
+    
+    }
+    
+    nav ul{
+        flex-direction: column;
+        
+        
+        
+    }
+    
+    nav ul>li{
+        padding: 1rem;
+    }
+    
+    hgroup{
+        align-self: center;
+    }
+    
+    
+    html{
+        font-size: 0.5em;
+    }
+    
+    #home{
+        padding-bottom: 11%;
+    }
+    
+    #home img{
+    
+        width: 10rem;
+    }
+
+    #hamburgermenu>svg:hover{
+        fill: white;
+    }
+    
+    
+}
+
+

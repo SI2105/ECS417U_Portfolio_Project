@@ -1,0 +1,83 @@
+
+#post_title,#post{
+    margin-block:1rem ;
+    font-size: 1.5rem;
+}
+
+.container{
+    /*Grid template changed to fit the page*/
+    grid-template-areas: "header"
+    "addpost"
+    "footer";
+    gap: 3rem;
+}
+
+#addpost{
+    grid-area: addpost;
+    margin-inline: 20% ;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    
+    padding-bottom: 9.5rem;
+}
+
+#addpost legend, #addpost>fieldset,#buttons>input{
+    background-color:  #2A628F;
+    
+}
+
+#addpost>fieldset{
+    text-align: center;
+    margin-inline-end: 0%;
+    border-radius: 2rem;
+    border-radius: 2rem;
+    border-width: 0.2rem;
+    border-style: solid;
+}
+
+#addpost legend{
+    
+    text-align: center;
+    
+}
+
+#buttons>input{
+    font-size: 2rem;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 2rem;
+    
+}
+
+
+#buttons>input:hover{
+    color:  #13293D;
+}
+
+legend{
+    /*Acts as the title of the form*/
+    font-size: 4rem;
+
+    font-family: 'Rubik', sans-serif;
+    padding: 1rem;
+
+    border-radius: 2rem;
+    border-style: solid;
+}
+
+
+@media only screen and (max-width: 768px){
+
+    #blog{
+
+        margin-top: 20%;
+
+    }
+    footer{
+        margin-top: 40%;
+    }
+
+
+
+}

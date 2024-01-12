@@ -1,0 +1,70 @@
+
+.container{
+    /* Grid template is setup so the header is at the top and the skills article is directly below. */
+    grid-template-areas: "header"
+    "skills"
+    "footer";
+    gap: 4rem;
+
+
+
+}
+
+header{
+    justify-self: stretch;
+    
+   
+}
+#skills{
+    grid-area: skills;
+    display: grid; /*Flex used as this page only needs two items arranged in a row*/
+    grid-template-areas: "pageheader pageheader"
+    "technical_skills non_technical_skills";
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+    padding: 4%;
+    justify-items: center;
+    row-gap: 10%;
+    font-size: 1.5rem;
+
+
+
+}
+
+#pageheader{
+    grid-area: pageheader;
+}
+
+#technical_skills{
+    grid-area: technical_skills;
+ 
+}
+
+#non_technical_skills{
+    grid-area: non_technical_skills;
+
+}
+
+h2{
+    font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 768px){
+
+    #skills{
+
+        margin-top: 20%;
+
+    }
+    footer{
+        margin-top: 20%;
+    }
+
+
+
+}
+
+
+

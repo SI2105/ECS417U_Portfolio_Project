@@ -1,0 +1,75 @@
+#about_me img{
+    /*The image in the about me section has its height and border radius set.*/
+    height: 30rem;
+    border-radius: 5%;
+    
+}
+
+.container{
+    /*The Grid for this page is adjusted to fit this page*/
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "about_me"
+    "experience"
+    "footer";
+}
+
+
+#about_me{
+    /*About me section of this page is made into a flex that displayed as a row of items that flow in reverse*/
+    display: flex;
+    flex-direction: row-reverse;
+    grid-area: about_me;
+    gap: 4rem;
+    font-size: 1.5rem;
+    justify-content: space-between;
+
+    padding-block: 2%;
+    margin-inline: 5%;
+    padding-inline-start:2% ;
+    padding-inline-end: 5%;
+
+}
+
+
+
+#experience{
+    grid-area: experience;
+
+    margin-inline: 5%;
+    font-family: 'Rubik', sans-serif; /*Google font used*/
+    
+}
+
+#experience>h2{
+    text-align: center;
+}
+
+#experience>section{
+    padding: 4%;
+}
+#experience h3{
+    font-size: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+
+p,#experience ul{
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 768px){
+    #about_me img{
+        height: 20rem;
+    }
+
+}
+
+
+
+
+
+

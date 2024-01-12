@@ -1,0 +1,96 @@
+
+.container{
+    /*Grid template setup to reflect the page contents*/
+    display: grid;
+    grid-template-areas: "header"
+    "social"
+    "footer";
+    align-items: center;
+
+
+}
+
+
+.social{
+    /*The section containing clickable links to my social media are given their own row based flexbox that
+    spaces each evenly*/
+    grid-area: social;
+    display: flex;
+    flex-direction: row;
+    gap: 0%;
+    justify-content: space-evenly;
+    padding-block: 10%;
+}
+
+
+#linkedin img, #github img,#github,#linkedin{
+
+    /*Sets the size of each icon*/
+
+    max-width: 55%;
+    height: auto;
+
+}
+
+#email a{
+    
+    color: navy;
+     
+}
+
+
+
+#github,#linkedin{
+    text-align: center;
+}
+
+.contactme{
+    /*The contact me section is defined as a column flexbox*/
+    text-align: center;
+    font-size: 3rem;
+    padding: 5%;
+    margin: 5%;
+    background-color:  #2A628F;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    
+}
+
+h2{
+    font-family: 'Rubik', sans-serif;
+}
+
+p{
+    font-family: 'Oswald', sans-serif;
+}
+
+h3{
+    font-family: 'Tilt Warp', cursive;
+    font-size: 1.25rem;
+    color: white;
+
+}
+
+
+.pageheader{
+    font-size: 4rem;
+
+    font-family: 'Rubik', sans-serif;
+
+
+}
+
+@media only screen and (max-width: 768px){
+
+    #contactme{
+
+        margin-top: 10%;
+
+    }
+
+
+}
+
+
+

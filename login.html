@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Rubik:wght@700&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <script src="js/home.js" defer></script>
+    <title>Sakibul Islam Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="hamburgermenu">
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20" rx = "10"></rect>
+                <rect y="30" width="100" height="20" rx = "10"></rect>
+                <rect y="60" width="100" height="20" rx = "10"></rect>
+              </svg>
+            </div>
+            <hgroup id="title">
+                <h1><a href="index.php#home">Sakibul Islam</a></h1>
+            </hgroup>
+            <nav>
+                <ul id="navoptions">
+                    <li><a href="about_me.php#about_me">About Me</a></li>
+                    <li><a href="about_me.php#experience">Experience</a></li>
+                    <li><a href="skills.php#skills">Skills</a></li>
+                    <li><a href="education.php#education">Education</a></li>
+                    <li><a href="portfolio.php#portfolio">Portfolio</a></li>
+                    <li><a href="viewBlog.php">Blog</a></li>
+                    <li><a href="contactme.php#contactme">Contact Me</a></li>
+                    <li><a href="login.html#login">Login</a></li>
+                </ul>
+            </nav>            
+        </header>
+
+
+        <form method="POST" action="login.php" id="login" >
+            <fieldset>
+                <legend>Login</legend>
+
+                <label>Username</label>
+                <br>
+                <input type="text" name="username" id="username" placeholder="Username" required>
+                <br>
+                <label>Password</label>
+                <br>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+        
+        
+                <section id="buttons">
+                    <input type="submit" class="submit" value="Login">
+                </section>
+                
+            </fieldset>
+
+            
+        </form>
+
+
+        <footer>
+            <ul>
+                <li>Sakibul Islam ©</li> 
+                <li><a href="https://www.linkedin.com/in/sakibul-islam-72a283200/" target="_blank" rel="noopener noreferrer"> Linkedin</a></li> 
+                <li><a href="https://github.com/SI2105/" target="_blank" rel="noopener noreferrer"> Github</a></li>
+                <li><a href="mailto: sakibul-islam@outlook.com" target="_blank" rel="noopener noreferrer"> Email</a></li>
+            </ul>
+        </footer>
+
+        
+        
+    </div>
+
+    
+    
+</body>
+</html>
