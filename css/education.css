@@ -1,10 +1,3 @@
-.container{
-
-    grid-template-areas: "header"
-    "education"
-    "footer";
-    gap: 4rem;
-}
 #education{
     grid-area: education;
     font-size: 2rem;
@@ -21,14 +14,10 @@
 
 @media only screen and (max-width: 768px){
 
-    #education{
-
-        margin-top: 20%;
-
+    header{
+        margin-bottom: auto;
     }
-    footer{
-        margin-top: 30%;
-    }
+    
 
 
 
