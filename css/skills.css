@@ -1,11 +1,6 @@
 
 .container{
     /* Grid template is setup so the header is at the top and the skills article is directly below. */
-    grid-template-areas: "header"
-    "skills"
-    "footer";
-    gap: 4rem;
-
 
 
 }
@@ -50,21 +45,16 @@ h2{
     font-size: 2rem;
 }
 
-
 @media only screen and (max-width: 768px){
 
+    header{
+        margin-bottom: auto;
+    }
     #skills{
-
-        margin-top: 20%;
-
+        font-size: 2rem;
     }
-    footer{
-        margin-top: 20%;
-    }
-
-
-
 }
+
 
 
 
